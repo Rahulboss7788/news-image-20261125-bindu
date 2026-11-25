@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — Wednesday 25 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; background: #f2f0ea; }
+  body { font-family: "Liberation Sans", Arial, Helvetica, sans-serif; color: #111; }
+
+  /* Masthead */
+  .masthead { height: 78px; background: #111; color: #fff; display: flex;
+    align-items: center; justify-content: space-between; padding: 0 34px; }
+  .masthead .name { font-size: 44px; font-weight: 900; letter-spacing: 1px; }
+  .masthead .name span { color: #ffd400; }
+  .masthead .tag { font-size: 16px; font-weight: 700; letter-spacing: 3px;
+    border: 2px solid #ffd400; color: #ffd400; padding: 6px 12px; }
+
+  /* Date band — large and unmissable */
+  .dateband { height: 96px; background: #ffd400; display: flex; align-items: center;
+    justify-content: center; border-bottom: 6px solid #111; }
+  .dateband h1 { font-size: 56px; font-weight: 900; letter-spacing: 1px; color: #111; }
+
+  /* Hero: dark panel, rocket art on the right */
+  .hero { height: 330px; background: #0b1e3a; color: #fff; position: relative;
+    padding: 28px 34px; border-bottom: 6px solid #e63329; }
+  .kicker { display: inline-block; background: #e63329; color: #fff; font-size: 17px;
+    font-weight: 900; letter-spacing: 3px; padding: 6px 12px; margin-bottom: 14px; }
+  .hero h2 { font-size: 66px; line-height: 0.98; font-weight: 900; letter-spacing: -1px;
+    width: 640px; }
+  .hero h2 em { color: #ffd400; font-style: normal; }
+  .hero p { font-size: 22px; line-height: 1.35; width: 620px; margin-top: 14px; color: #d7e0ee; }
+  .hero p b { color: #fff; }
+  .rocket { position: absolute; right: 46px; top: 22px; width: 220px; height: 286px; }
+  .star { position: absolute; background: #fff; border-radius: 50%; }
+  .rocket-body { position: absolute; left: 82px; top: 30px; width: 56px; height: 150px;
+    background: #fff; border-radius: 28px 28px 8px 8px; }
+  .rocket-nose { position: absolute; left: 82px; top: 0px; width: 0; height: 0;
+    border-left: 28px solid transparent; border-right: 28px solid transparent;
+    border-bottom: 44px solid #e63329; }
+  .rocket-window { position: absolute; left: 98px; top: 78px; width: 24px; height: 24px;
+    background: #2f9be8; border: 4px solid #0b1e3a; border-radius: 50%; }
+  .fin-l { position: absolute; left: 58px; top: 140px; width: 0; height: 0;
+    border-top: 22px solid transparent; border-bottom: 22px solid transparent;
+    border-right: 30px solid #e63329; }
+  .fin-r { position: absolute; left: 132px; top: 140px; width: 0; height: 0;
+    border-top: 22px solid transparent; border-bottom: 22px solid transparent;
+    border-left: 30px solid #e63329; }
+  .flame { position: absolute; left: 96px; top: 182px; width: 28px; height: 64px;
+    background: #ff8a00; border-radius: 0 0 14px 14px; }
+  .flame-in { position: absolute; left: 103px; top: 182px; width: 14px; height: 40px;
+    background: #ffd400; border-radius: 0 0 7px 7px; }
+
+  /* Middle row: two big stories */
+  .mid { height: 250px; display: flex; background: #f2f0ea; }
+  .mid article { flex: 1; padding: 22px 28px; background: #fff; }
+  .mid article:first-child { border-right: 4px solid #f2f0ea; border-top: 8px solid #e63329; }
+  .mid article:last-child { border-top: 8px solid #0b5cab; }
+  .tagline { font-size: 15px; font-weight: 900; letter-spacing: 3px; color: #e63329; margin-bottom: 10px; }
+  .tagline.blue { color: #0b5cab; }
+  .mid h3 { font-size: 32px; line-height: 1.05; font-weight: 900; margin-bottom: 10px; }
+  .mid p { font-size: 19px; line-height: 1.35; color: #333; }
+
+  /* Bottom row: four short stories */
+  .bottom { height: 210px; display: flex; background: #111; }
+  .bottom article { flex: 1; padding: 18px 18px 0 18px; color: #fff;
+    border-right: 2px solid #333; }
+  .bottom article:last-child { border-right: none; }
+  .bottom .k { font-size: 13px; font-weight: 900; letter-spacing: 2px; color: #ffd400; margin-bottom: 8px; }
+  .bottom h4 { font-size: 21px; line-height: 1.12; font-weight: 900; margin-bottom: 8px; }
+  .bottom p { font-size: 15px; line-height: 1.3; color: #cfcfcf; }
+
+  /* Footer */
+  .footer { height: 60px; background: #ffd400; display: flex; align-items: center;
+    justify-content: space-between; padding: 0 34px; font-size: 16px; font-weight: 700; }
+  .footer .left { letter-spacing: 1px; }
+  .footer .right { letter-spacing: 2px; }
+</style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="name">THE WORLD <span>TODAY</span></div>
+    <div class="tag">ONE DAY &middot; ONE PAGE</div>
+  </div>
+
+  <div class="dateband">
+    <h1>WEDNESDAY 25 NOVEMBER 2026</h1>
+  </div>
+
+  <section class="hero">
+    <span class="kicker">SPACE &middot; CHINA</span>
+    <h2>FIRST PAKISTANI <em>IN ORBIT</em></h2>
+    <p><b>Shenzhou-24 lifts off for Tiangong.</b> Zeeshan Ali becomes the first
+    Pakistani in space and the first foreign astronaut aboard China&rsquo;s
+    space station, on a week-long mission of 90 experiments.</p>
+    <div class="rocket">
+      <div class="star" style="left:10px;top:20px;width:6px;height:6px"></div>
+      <div class="star" style="left:200px;top:60px;width:5px;height:5px"></div>
+      <div class="star" style="left:30px;top:150px;width:4px;height:4px"></div>
+      <div class="star" style="left:190px;top:180px;width:6px;height:6px"></div>
+      <div class="star" style="left:60px;top:250px;width:4px;height:4px"></div>
+      <div class="rocket-nose"></div>
+      <div class="rocket-body"></div>
+      <div class="rocket-window"></div>
+      <div class="fin-l"></div>
+      <div class="fin-r"></div>
+      <div class="flame"></div>
+      <div class="flame-in"></div>
+    </div>
+  </section>
+
+  <div class="mid">
+    <article>
+      <div class="tagline">TECH &middot; UNITED STATES</div>
+      <h3>HUAWEI GUILTY IN US TRIAL</h3>
+      <p>A US jury convicts the Chinese tech giant of conspiracy to steal trade
+      secrets and bank fraud, in a case over its Iran business.</p>
+    </article>
+    <article>
+      <div class="tagline blue">SECURITY &middot; WASHINGTON</div>
+      <h3>CIA AND ODNI HIT BY CYBER BREACH</h3>
+      <p>America&rsquo;s spy agencies discover a breach exposing some unclassified
+      information, the New York Times reports.</p>
+    </article>
+  </div>
+
+  <div class="bottom">
+    <article>
+      <div class="k">CHINA &middot; POLITICS</div>
+      <h4>SHANGHAI CHIEF PROBED</h4>
+      <p>Politburo member Chen Jining investigated &mdash; the fourth top leader probed since 2025.</p>
+    </article>
+    <article>
+      <div class="k">SOUTH ASIA</div>
+      <h4>QUAKE SHAKES NEPAL</h4>
+      <p>Magnitude 5.4 tremor jolts Nepal; shaking felt across eastern India.</p>
+    </article>
+    <article>
+      <div class="k">SPORT &middot; FOOTBALL</div>
+      <h4>SENEGAL WIN CUP BACK</h4>
+      <p>CAS hands the Africa Cup title back to Senegal, overturning Morocco&rsquo;s win.</p>
+    </article>
+    <article>
+      <div class="k">UNITED KINGDOM</div>
+      <h4>TWO HELD OVER ROYAL BREAK-IN</h4>
+      <p>Two men arrested after masked intruders broke into William and Kate&rsquo;s country home.</p>
+    </article>
+  </div>
+
+  <div class="footer">
+    <div class="left">THE WORLD TODAY &mdash; WEDNESDAY 25 NOVEMBER 2026</div>
+    <div class="right">SEVEN STORIES &middot; ONE DAY</div>
+  </div>
+
+</body>
+</html>
